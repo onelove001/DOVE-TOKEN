@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "newToken": {
+      "main": "src/newToken/main.mo",
+      "type": "motoko"
+    },
+    "newToken_assets": {
+      "dependencies": [
+        "newToken"
+      ],
+      "frontend": {
+        "entrypoint": "src/newToken_assets/src/index.html"
+      },
+      "source": [
+        "src/newToken_assets/assets",
+        "dist/newToken_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
