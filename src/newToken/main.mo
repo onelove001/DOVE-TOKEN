@@ -8,7 +8,6 @@ actor {
   let totalCoinSupply : Nat = 1000000000;
   let symbol : Text = "DOVE";
 
-
   private stable var balanceEntries : [(Principal, Nat)] = [];
   private var balances = HashMap.HashMap<Principal, Nat>(1, Principal.equal, Principal.hash);
   if (balances.size() < 1) {

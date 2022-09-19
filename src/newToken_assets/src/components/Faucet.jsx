@@ -1,7 +1,6 @@
 import React from "react";
 import {canisterId, createActor } from "../../../declarations/newToken";
-import {Principal} from "@dfinity/principal";
-import {AuthClient} from "@dfinity/auth-client"
+import { AuthClient } from "@dfinity/auth-client"
 
 
 function Faucet(props) {
